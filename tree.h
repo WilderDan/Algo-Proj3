@@ -19,8 +19,9 @@ struct node {
 }; 
 
 void treeInsert(struct node **root, struct node *newNode);
-void treeSearch(struct node *root, int search);
-void treeDelete(struct node *root, struct node *target);
+struct node* treeSearch(struct node *root, int search, int isPrint);
+void treeDelete(struct node **root, struct node *target);
+int height(struct node *root);
 void inorder(struct node *root);
 void postorder(struct node *root);
 void preorder(struct node *root);
