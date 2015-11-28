@@ -31,7 +31,7 @@ void treeInsert(struct node **root, struct node *newNode) {
     
     if (y == NULL)
         *root = newNode;
-    else if (newNode->key < y->key)
+    else if (newNode->key <= y->key)
         y->left = newNode;
     else 
         y->right = newNode;
